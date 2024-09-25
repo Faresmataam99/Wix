@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  </head>
+  <body  >
+    <header>
+      <nav class="flex justify-around items-center mt-5 flex-col md:flex-row xl:flex-row">
+        <div class="flex align-center justify-center list-none gap-5 traqnsition:all hover:text-[#B5BAC1] ">
+          <li>Home</li>
+          <li>Blog</li>
+          <li>About</li>
+        </div>
+         <h1 class="border-4 border-black p-4  font-bold  text-5xl mt-7 z-10 bg-white tracking-wide md:tracking-widest">Salt & Pepper</h1>
+        <div class="flex justify-center align-center gap-6 m-7 md:m-0">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAZ1JREFUaEPtl61LBUEUxX8PP8A/wGAQTH5WNYtRTIKaBLO8piA2k5hsBvEfELUZBC1mEZPff4BRRIMWwR15ivjuwtw3O+ws3i0Lw5mZc+45c3e2RsWfWsX5YwLKdtAc+A8OjAILwBDQD/QCb8Ar8NJ4rwBnrRQjZoQ6gR1g0YPYHHDggWuCxBLQBpwAk56kkhOwAax5kneweWBfgf+BxnCgD3gAOhSEknJgFdhUkE/OgSNgOkfAKeDiddnoQEqdzfAYEToHxgRm71lX6gGeg1n/WiCGgFtgUCB5k7XKkSLJu7ViCLgDBgSiFznOBGkyAUL5zAFNpkIiNJFttC5sNg50CePu8ubap/TMAE8a4t/YEAHu87/XyqZ/5nwA7a2uk4KA+5y266UpBQHHwJQXWwGUgoBtoF5lAcvAVhkC3LVgVth4CegWxh+BXWH8ELgqQ0DentfZz8lwla8SJkATp5AuZBHSVDoPaw4IlbFDrImWRcgipMlLwbdR+w4EFv9ruh1iO8SBOYoRoUBKuukmQFev4tHmQPE11a1YeQc+AR4+UzF+HUh9AAAAAElFTkSuQmCC"
+            height="20"
+            width="20"
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABRdJREFUaEPtmWWId0UUh5/XLlBR7G78oB9sERMVA7sVW1QUWxTBVgQxEUxsDOzGTkRRVBQDuzCxsbDnkbkye3fuvXN3//9XFvbAwu7cmXPmN3PO75wzO4UJLlMm+P6ZBPB/3+DkDUzEG1gA2AXYDFgCWGScID4G3gXuBa4HPu2jr48LzQycAhwOTNvHSI+5fwLnAccDv5SsKwWwHnBl+Fm0ROkA5nwI7AU81qWrBMA6wOM1Rd8CtwMvAm8Dv3UZavjurS4PrAlsDMxam7cu8ESb7i4AGngdWCwq+Qo4Mvj+NWPccNuy2cLHk6L+at4HEWCjO3UBOCf6vAoNrlWBT4aw+VTlasCzycC5wBFNNtsALAx8lCxcv8Qne4KbC9gzMtoLwMnAj8CJ8TYqdXqAcTFK2gDsB1waVzwHeDKDloOBCxKl3rguquiuAlQOBC7uC+DycAN7x0WnRWrrC8AA/T0Gem7tGcCxyQddZ434923A1vH3K4B9+gKQeWQgZQfg5oLdzxT9VfZYJXD6HHGNrPU88Ejk+Yq1TIjXJXpPCDnm1Pi37uTfyqPABn0BvJ+wj0Ce7ACwEnAjsFTHvDeBHcPpvhzn7RYoecVIEq7/LI7vn7iNmTqrty0GvgHmjMo08ErLxmSJs0IQdrFapcKMq6+f36Jz51haOMW9VPEwYkmbwb+TmY0sEJPQ07WNXA3cHa79KWDGSABbAp52JepfHZAgcrINcGv88FM4IPPEKCkFMF9ggi8y62cBXgUWj9/MFW6yqQTYELgWmDfON4uvEAL514xuA9hAVn7OZOl/P5QCmBv4OmNEDrdGqmQtoH4b9WUG48PJoIF8w7ABGAvfZYxcBewRxy8BDmhwh/qwtGixpphrDNi6DPQGZg/0+EPGiG41TxzfCHioEMDmMUac/k6g0qUz67aKBaOfrIV011FS6kLzh9P9vLZ6yWi8Gpbzvy8EYFOU1lQ5/TZM9yT6snstBZBjoeUCn7+RGGhysxwmN5x2XstksrUB/2CyeLpQDUi/I6QUgG2jrV8q00T2mH4MLpSebpN76JIPDPMG1P1M5HJ/vwXYvtCF7o8NjNPN8FXJki7fNPbJ1djAXUjFF9WYp6TkNqHdkezUbHxYBvgWwJ1x3IJwhvEEcc6F1Lcs8BJg56bo17vHoi1nT7cwkVXMZYY1kb2XmZxm4nGzUFspsV2mUrWUsGfWxSwlVga2DYG6a22jnrIlR052ShKc7FZVtsVBbPquTlaelq+b5JiwUWv70mLOOuho4OwWnSZIE6Ui5S7U14Vs4apHq7VjYdYWo6XltAfh6dpCtsm+wGVxgq1t9kmn7cSsEm1KFOv3mzoM+tmG5szQDtoq1nX/Fcvn4xqKt7p6mxmbGsXnGw9olLQBSFs6X+RstEvF3GC2terUXb6MAS6blIodoPGlyEaWFr0AHBrbPxfZDvqkMjUlbep9zvTJsRcAmce2shJpTWaZGqKbnZ4Y8hE53ct/n7pYwyRzSJxtMScb+W4zTLH3fS1JXBcCBzUZ7AIgjb6VUJin4MnI838MGIXlsod1VNL/Sp8WjY2H1gXAPW4S/P++2mZtbgxy2UGAfYIzVZU+7pql632vRV/d9oitlABwgYp8GcsmkwHfhOo8IB+yqp640UQpABX49C0vW3gN6x8c2rE6Ne/UG6gsiD4AKgULxkxqWziofzEZW2ZmXwPv6nOjYwHQR//Q504CGPoRdxiYvIHJGxjnCfwDHkX3MVHc7z4AAAAASUVORK5CYII="
+            height="20"
+            width="20"
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA2FJREFUaEPtmVmojVEUx3+XB7NSMiZC5iIPJEoyy0wiMoQopUhRHoiIB/HgQaGkKPMQD0pIJKRIZMyT2YuMIex/7VPn3L7zfXvvbx86dXbdbrdvrf9a/732XsO+dVT5qqty/6kR+N8RrEWgFoGcO1A7Qp4b2BFYA/QFegOtgQfAVeAQcMcTLzWN9gQe+wKmyI82Th8BWqXInAaWAe+KZPT3eGBqkl7aEToKNAUmRiCxwuz2bkecl8ApYKD53R9oBoj8RR8CLYGPVuFMOfaODsmJu46ySWKrgF32gzb0a7FQuQgMMmG7WSR4EpgR6MRDe9591eXoVuAtMAL4A8yrD1KOgJw9Xk/4FjDf817o3Oo45F33gcHAN1cCw4ErCVZ/AJuA7cAvB6+2GaNrHeTSRJSlFIH3PnegmwnXsxTUe8ACQL/TljZBmxG6bgBjgU/lANKykJj3ybCs/H0COAx8SJBV6PuFeg+MAy6k6acRmACc9zB+zRYlRU6OPwX22BToAVMiOhK4FEpAeseAmaHWI+gpG94OITAU6AqcA/YB0yM4EwLRwVTm1yEEVAULfckTc8Z7hFjPqfMZaJGFUe4ONAK+ZylX+Pt10z4My7KRdolVgBIbqCzQSN9Va9ZlYaURUDeqVNowC6RC31W8koppibmsgWaDkd5YIQfTYFV127jYzSIgjKU2nzdwAYwks8MOPplwLgQEony80hSnuZmIcQSUwl+4QLkQUCYYZcE0Bs5yAc4ho6lttqu+C4EuwHPThf6LI/TbzsuPYhIQlpq1Oa6gOeR2Aqt99F0iIDxlBE1oikallh4QBvgWUFcCclrOKy93rgADtQ1qX9TBei0fAgXgRcBCoJNJr+3MdNbEy2Ky8BRD4GwITgiBgp32JioHgDEhhq3OTzPVTfOcO0rMhRDQk8tiOxs3z+H8F9PxTjIj5+UcGF7/4NB4p+ZOs3DjPEYBteiaMdRr5VpJEdAr2GRALxBtAR2VIZHOupzVW8/6XF4XKZc7QnJ6sz0qMWzpPWc/sAV4EwOwgJF1B/R6vMQYXR6YPjXcHwT2Fj1VxvTf6w4obfayTy0aMbsDmhlUF/Qg+8rmcY2i+tEwXvKOGdVzC5YVgUrYjIpZIxB1OwPAahEI2LSoKrUIRN3OALCqj8Bfn7V4MWWx7lcAAAAASUVORK5CYII="
+            height="20"
+            width="20"
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABYdJREFUaEPtmWWodUUUhp/vn93diR3Yhd2d2GBiYRfYjd3dYIOK2IqJKKiIjV0odoL1S50H9r7MnTt79t7nXJAL3wsX7jkzs2bWrFlrvWudSUxwTJrg52eyAv+3BcfTAvMBGwPrVn9zJ8p9CTwVxp4DngS+HQ/lh1VgIeAoYFNg4Z4Heg94FDgf+L7n2pHpgyowVZBwGnDsoBtH6/4EzgTOHUTWIApsC1wNzDnIhoU1HwL7AS/0kdtHAW/9ZmDnPhsMMPcK4LCu67oqMBvwBLB8V8FDztPJtfRfbXK6KDAl8DKwTJuwcR6/D9gJ+Lckt4sC9wI79Dzc88B3wA/Ar8Aclc+sDszYQ5aB4vRhFDgSuLjjhrcA91RPrbRkPWBPYO+OcjcAnmmaW7LAPIDJpw2+1yOCcxvX+0D5p1aRp7TuM8B8k0VJgduB3VtOdEoVw/scPJ27WUiCtwEzF4SYLC/JjTcpsChgXC5hV+DuZMLUwI7AFsBSwPxVJPkgXMZHwNOAF5NiNeDZkMymaNjwG2CuPgpcCxxQOH3u5g8BzgBmalH8zSpEfp7M2ysorB81QZ+5NR3MWcCwKTeZpkHS68AKyZiRQqW64mdgJcD3HeMVYOUGIWbotbsosCXwUOEkm1Rssp6yD3BT15NH894Glk3WGXFkrE2YBfgpHsxZ4ELg6AYJXwQzLhCNzRrCod9ptRpnhfd6PSBJ00+kBk2QMqTjHrDpGW4X2MADbQrI19dp2FES51uvIYM8Pvp8I7B/svaOEBB2a5D3ErBmMqY1tWoOXs7JbQpYaMzeIMAEFEcR33BtEW/cqPNjslaFryxYQev9HY2bU7Ihs0qUu7Qp8E9I303hdXPgsUrADMAvkbCHga0yBz0wXMg1BQWWDpzn3Whc2iJ9yeHVUASt0qZAiTytBbxYCUgz9eVBocMzu15UVW1NOqwKGH1qeAkPNkz+GhhVquZu+o9Q5sn9c9goihKa3mdT44Lw+bjMIuN+Gm3iaYslSdN4b92RgxYf5eA5BUwwvuUcvGFvusY7Vcb1s76hj8Sw0DdKlZCe4QTg7IYFY3hRToHXMomqlnd/Qq2NCidWg1+FfDBvsrEKX1o4vXuZ0GI8DphrchgTtXIK3FnF75wAKyTfYO28+oEcRw7zOzBtskiHt2PRBEOwXYkY7tHEiXxa+8aTcwocDFxV2FSnPCYaN0QaKr05mWXXw1joSBrjsGuIvKuw90GhOJKnjSCnwHKBbL1REOKQZtf8wvAp+8wRvFJEM+GZ+GKUkqjzlgDeb1PA8U+BBQtKSG/twunEderfsKLL8TIbAc5LYXbeI/lym5QmJOMeXAVGoSlh+Ta7NJq0woqVRN+/fhDDZOdzrKmEUeS8UB9fl8zTryR3pXrZ8nZMQGhSQJLWp92XpbrRIW2CSc91+BSOub7UmtRfjHDpBRXb6xbzat0FtgbjemDrkBM+SShCTo60wEZAzHBz86ydLZbGoFQTW6PqC9N10MDoYxSqYaSQSstedVSVieGB5Ugxk23aJpdfRua29YXk65d1UCB9/x447iTIdax5rWsXCa0X+0NdERPIXhaoJ5cSm3PSErMLfeh6+HOiTJ9d02YBF5kVZaBpHVwLNPHEBYsd5hu6nrAwL6UtAyvgQv3AHyPS6skxqUD8lq1prW2Hgf60/Xg1d+ODWI+acGIYHYwSwlD48TAnr2J91+g30K+UUmZDrB0CIfU9qfq/rZ9U0s3WpM9PxtkZXXwgJ2z6qvo6FNDJpc1Ldoj7OVm/VR3opjq4qMygCsRC16huzX6+77Yr3gpNrEcqa6aNgK4yBnpCTcKtDSRu64ee6eKBA0lH/GWn5vb2R2Wb/tkj9beDoTEeFhj6EMMImKzAMLc3HmsnvAX+A67V8jFLUR7HAAAAAElFTkSuQmCC"
+            height="20"
+            width="20"
+          />
+        </div>
+      </nav>
+    </header>
+     <div class="flex align-center justify-center items-center flex-col"> <img class="flex items-center  max-w-sm  -mt-3 md:align-center md:max-w-4xl justify-center  xl:align-center justify-center " src="https://static.wixstatic.com/media/a38016_d611409d5aab40aebf4545266d6398c2.jpg/v1/fill/w_1500,h_531,al_c,q_85,enc_auto/a38016_d611409d5aab40aebf4545266d6398c2.jpg" alt="" >
+     <div class="flex align-center justify-between items-center border-2 border-black   py-2 -translate-y-1/2 bg-white md:max-w-xl xl:max-w-xl md:mx-auto  md:gap-20 xl:gap-20   " > <label for="Search"></label>
+      <input  type="text" placeholder="Search..."> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABFdJREFUaEPtmWnIlUUUx38m2qYlGJmYJZWlRBJI+CEiTM0PttCOJFGpUaiIgiSZUmqmImUoRqCmFdkepKUGrpQSBX6JJG1R6YOgpeWCii3zl5kYnubeZ859vHRfeA9cXl7umf+Z/8yZs90OtHHp0Mb3TzuB//sGq9zAecCdwL1AP+AS/xGng/6zE/gQ+BQ40QyyjRDoAcwGHgbOz9zUceANYAZwIHNNlpqVwExgCqDTb0RE5EV/AI2s/8+aXALdgbXOFW46K1ZhE3AP8HtVvBwC/f3mr0wYOwR8ArwH/AT84nUuB64B7gfuBrol1u4GhgL7qpAoI9AL+ArQ31h+9q7wOnC6ZAPnAqPdI54K9C7oisQgQAfRkNQjcJE7oS9cFLmhgPw+MAo4ZbR4AfAucEdh3XZgMHDSiHdGvR6BxS5ijCuAzgeebsRQtOZV4MkCxvPu/+cawa1FoI875R+AjhGo4rl8uqqcA3wGDI+AjgFXAL9ZwWsReBsYGYH96B+lFb+WvtxTmEp+QV4GJlsNpAgoOR0GOkdg9wEfWcFL9J8ClkQ6yt6XAn9b7KQIPOgfW8D5DrjeAmrQVVaOb+EWHziyIVIE3vJlQgCZ5UuAbFCD4jKXBx6P9M1BIkXgG2BgBHozsM2wKYvqAz4JhjV63CMsACkCyoxxwlFE2msBNeje6DL1jkj/20TeqQuXIqAE1SladSGgIqwZohIjzsJ/ABdbDKUIHAG6RCBdgaMWUIOu7MheEB2UDixbUgRUn6gQC9LXJ7VsUIPitS7ffB/py1XlstmSIrAVUDgLMgTYmI1oUxwGfB4tUQAxlewpAq8BT0Sg5tBm4PCS6wkmRfpLgbGG9cliTtXi6ghELqWrboaoLI9dRrWWaq5sSd2ASghFBpW/QRSvP8hGzVN8BFgZqeoxX2aNeLWKueUu9j8WgavbujpvX1laOhxVuz0j7Xm+6ckCCEq1CKgl1KbjfKBGRnVSVZFNtaFxY/MXoJY1tKTZNuo1NAudK00sIGmcMj0bPa24yM2Mxhe+mgNMawS3HgElmS9dGT2gALyi4F65duU2q4C7CgsqVbtlTb0e1deAXCoW+e8L7l286W7kzxIGaurH+Fa02NRrqer/R/3gK/cw/tUrIyBFjQ3X+5avaOBX4GMfofZ4HxamNqoMHsYq6sDKRGW1phwmySEgQDUda/wIxGSghrKy7+2J78wkcgkEW2punq3AQJO4Cd71bnMly4YElmZICuNZYiUgUA255vrZUJYR38C/4hOXSuYgmkysq0KiEQLBnspexfKH3AO8CtD8VK6mR73fv4fN3vVUpNWSYukS9FQTqTaqK1UIlGFbvldo1dQjnkNlRadWISCyiljvWEm0EgGR0I8mmooU5TpgV+pKW41AIKEEGfamH1QW1PLHViSgvSofaGakX3OeqfeYWpWA9nyrG7tvKYsErUygbO9nvm8nkHVMTVRqv4EmHm4WdJu/gX8AUZOmMeH+ThoAAAAASUVORK5CYII=" height="20" width="20"/></div></div>
+      
+   <div class="flex items-center justify-center align-center text-4xl bg-white m-7 font-bold duration-400ms tracking-nromal hover:tracking-widest cursor-pointer" ><p>FOOD BLOG</p></div>
+<!--comment-->
+   <section class="max-w-screen-md mx-auto mt-4 mb-5 md:mb-20 px-4 lg:px-0">
+    <div class="flex flex-col gap-5">
+      <div class="flex felx-col md:flex-row gap-4 md:gap-7 border  ">
+        <img src="https://static.wixstatic.com/media/f3932a74408c4727a7b717f927088f22.jpg/v1/fill/w_1688,h_1268,fp_0.50_0.50,q_90,enc_auto/f3932a74408c4727a7b717f927088f22.jpg"  height="350" width="350">
+        <div class="py-6 px-8 flex flex-col gap-5 md:gap-5 justify-between">
+         
+         <h2 class="text-3xl font-bold">Miracle no knead bread</h2>
+          <p class="text-base md:text-xl text-justify">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
+          <div><hr></div>
+  <div class="flex justify-between">
+          13,5k views
+        <span class="text-red-500"><p> <3 </p></span></div>
+        </div>
+      </div>
+
+
+      <div class="flex flex-col gap-5 ">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-7 border ">
+          <img src="https://static.wixstatic.com/media/b381154bcd8c4c38b5896efd508b6e49.jpg/v1/fill/w_1688,h_1268,fp_0.50_0.50,q_90,enc_auto/b381154bcd8c4c38b5896efd508b6e49.jpg" alt="" height="350" width="350">
+          <div class="flex flex-col md:flex-col gap-5 p-5 ">
+            <H2 class="text-3xl font-bold">
+              Italian inspiration on a budget
+            </H2>
+            <p class="text-base md:text-xl text-justify ">Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading.... </p>
+            <div><hr></div>
+            <div class="justify-between flex">
+         20,5k views
+          <span class="text-red-500">3k likes </span>
+          </div>
+      </div>
+    
+    </div>
+    <div  class="flex-flex-col gap-5">
+      <div class="flex flex-col md:flex-row gap-5 md:gap-7 border ">
+        <img src="https://static.wixstatic.com/media/bbed4f2c072f437b98b41824881aa51a.jpg/v1/fill/w_1688,h_1268,fp_0.50_0.50,q_90,enc_auto/bbed4f2c072f437b98b41824881aa51a.jpg" alt="" height="350" width="350">
+        <div class="flex flex-col md:flex-col gap-5 p-5">
+          <h2 class="text-3xl font-bold">Plating made easy: feast with your eyes</h2>
+          <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
+          <div><hr></div>
+          <div class="flex justify-between">
+            <span>25,8k viwes</span>
+            <span class="text-red-500"> 5k likes </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-5 mt-7">
+        <div class="flex flex-col gap-5 md:flex-row md:gap-7 border ">
+          <img src="https://static.wixstatic.com/media/ecb62ff544f445c2ed53e1d0443d6c37.jpg/v1/fill/w_888,h_667,fp_0.50_0.50,q_90,enc_auto/ecb62ff544f445c2ed53e1d0443d6c37.jpg" alt="" height="350" width="350">
+          <div class="flex-col flex gap-5 md:flex-col p-4 ">
+          <h2 class="text-3xl font-bold">Entertaining made easy: 3 easy ingredients crostints </h2>
+          <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....
+          </p>
+          <div><hr></div>
+          <div class="flex justify-between">
+            <span><p>30,8k views</p></span>
+            <span class="text-red-500">3k likes</span>
+          </div>
+      </div>
+    </div>
+
+      <div class="flex-col flex gap-5">
+      <div class="flex flex-col gap-5 border md:flex-row md:gap-7 mt-7 ">
+  <img src="https://static.wixstatic.com/media/c18e117763dc4b60ba891139fa28c8d7.jpg/v1/fill/w_1688,h_1268,fp_0.50_0.50,q_90,enc_auto/c18e117763dc4b60ba891139fa28c8d7.jpg" alt="" height="350" width="350">
+  <div class="flex flex-col p-5 gap-7"><h2 class="font-bold text-3xl">7 salads to spice up your summer</h2>
+  <p>
+    Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
+  <div><hr></div>
+  <div class="flex justify-between"><span>35,7k views</span>
+  <span class="text-red-500" > 3k likes </span></div>
+</div>
+</div>
+</div>
+
+     
+
+    </div>
+  </section>
+  
+  
+
+
+<div class="flex align-center justify-center items-center text-sm " ><button class="bg-black text-white py-2 px-24 m-5 transition: all hover:bg-white  duration-[400ms] border-4 border-black hover:text-black" >All Posts</button></div>
+<section class="flex align-center justify-center items-center flex-col gap-6 vh  md:flex-row xl:flex-row  " >
+<div class="flex flex-col align-center justify-center gap-8 md:flex-row xl-flex-row" ><img src="https://static.wixstatic.com/media/5a6a58201a2e97b6b7c39b880738af97.jpg/v1/fill/w_494,h_494,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/5a6a58201a2e97b6b7c39b880738af97.jpg" alt="" height="250" width="250"> <div class="flex flex-col align-center justify-start" ><div><p class="text-2xl font-bold" >Made by Sophie with love</p></div>
+<div class="flex align-center justify- items-center" ><p class="text-[#585858]" ><u>About me</u></p></div></div>
+
+<div class="flex align-center justify-center flex-col gap-8 md:flex-row xl:flex-row " ><img src="https://static.wixstatic.com/media/a38016_25951c0846654461a160c99568cd6f52.png/v1/fill/w_494,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a38016_25951c0846654461a160c99568cd6f52.png" alt="" height="250" width="250">
+<div><p class="text-2xl font-bold justify-center">My cook book</p>
+<div class="flex align-enter justify-center items-center list-none flex-col" ><p class="text-[#585858] align-center justify-center items-center font-bold" ><u>availble at:</u></p>
+<li class="text-[#585858]" >Broadway books</li>
+<li class="text-[#585858]">Hungry Reads</li>
+<li class="text-[#585858]" >Gracy's Book shop</li>
+</div></div>
+</section>
+<section class="flex justify-center items-center flex-row " >
+<div><div class="tracking-widest font-bold m-7" >SUBSCRIBE VIA MAIL</div>
+<div class="bg-black p-2 m-[50px]"></div>
+<div class="flex flex-col gap-6 m-6" >
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAZ1JREFUaEPtl61LBUEUxX8PP8A/wGAQTH5WNYtRTIKaBLO8piA2k5hsBvEfELUZBC1mEZPff4BRRIMWwR15ivjuwtw3O+ws3i0Lw5mZc+45c3e2RsWfWsX5YwLKdtAc+A8OjAILwBDQD/QCb8Ar8NJ4rwBnrRQjZoQ6gR1g0YPYHHDggWuCxBLQBpwAk56kkhOwAax5kneweWBfgf+BxnCgD3gAOhSEknJgFdhUkE/OgSNgOkfAKeDiddnoQEqdzfAYEToHxgRm71lX6gGeg1n/WiCGgFtgUCB5k7XKkSLJu7ViCLgDBgSiFznOBGkyAUL5zAFNpkIiNJFttC5sNg50CePu8ubap/TMAE8a4t/YEAHu87/XyqZ/5nwA7a2uk4KA+5y266UpBQHHwJQXWwGUgoBtoF5lAcvAVhkC3LVgVth4CegWxh+BXWH8ELgqQ0DentfZz8lwla8SJkATp5AuZBHSVDoPaw4IlbFDrImWRcgipMlLwbdR+w4EFv9ruh1iO8SBOYoRoUBKuukmQFev4tHmQPE11a1YeQc+AR4+UzF+HUh9AAAAAElFTkSuQmCC"
+      height="20"
+      width="20"
+    />
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABRdJREFUaEPtmWWId0UUh5/XLlBR7G78oB9sERMVA7sVW1QUWxTBVgQxEUxsDOzGTkRRVBQDuzCxsbDnkbkye3fuvXN3//9XFvbAwu7cmXPmN3PO75wzO4UJLlMm+P6ZBPB/3+DkDUzEG1gA2AXYDFgCWGScID4G3gXuBa4HPu2jr48LzQycAhwOTNvHSI+5fwLnAccDv5SsKwWwHnBl+Fm0ROkA5nwI7AU81qWrBMA6wOM1Rd8CtwMvAm8Dv3UZavjurS4PrAlsDMxam7cu8ESb7i4AGngdWCwq+Qo4Mvj+NWPccNuy2cLHk6L+at4HEWCjO3UBOCf6vAoNrlWBT4aw+VTlasCzycC5wBFNNtsALAx8lCxcv8Qne4KbC9gzMtoLwMnAj8CJ8TYqdXqAcTFK2gDsB1waVzwHeDKDloOBCxKl3rguquiuAlQOBC7uC+DycAN7x0WnRWrrC8AA/T0Gem7tGcCxyQddZ434923A1vH3K4B9+gKQeWQgZQfg5oLdzxT9VfZYJXD6HHGNrPU88Ejk+Yq1TIjXJXpPCDnm1Pi37uTfyqPABn0BvJ+wj0Ce7ACwEnAjsFTHvDeBHcPpvhzn7RYoecVIEq7/LI7vn7iNmTqrty0GvgHmjMo08ErLxmSJs0IQdrFapcKMq6+f36Jz51haOMW9VPEwYkmbwb+TmY0sEJPQ07WNXA3cHa79KWDGSABbAp52JepfHZAgcrINcGv88FM4IPPEKCkFMF9ggi8y62cBXgUWj9/MFW6yqQTYELgWmDfON4uvEAL514xuA9hAVn7OZOl/P5QCmBv4OmNEDrdGqmQtoH4b9WUG48PJoIF8w7ABGAvfZYxcBewRxy8BDmhwh/qwtGixpphrDNi6DPQGZg/0+EPGiG41TxzfCHioEMDmMUac/k6g0qUz67aKBaOfrIV011FS6kLzh9P9vLZ6yWi8Gpbzvy8EYFOU1lQ5/TZM9yT6snstBZBjoeUCn7+RGGhysxwmN5x2XstksrUB/2CyeLpQDUi/I6QUgG2jrV8q00T2mH4MLpSebpN76JIPDPMG1P1M5HJ/vwXYvtCF7o8NjNPN8FXJki7fNPbJ1djAXUjFF9WYp6TkNqHdkezUbHxYBvgWwJ1x3IJwhvEEcc6F1Lcs8BJg56bo17vHoi1nT7cwkVXMZYY1kb2XmZxm4nGzUFspsV2mUrWUsGfWxSwlVga2DYG6a22jnrIlR052ShKc7FZVtsVBbPquTlaelq+b5JiwUWv70mLOOuho4OwWnSZIE6Ui5S7U14Vs4apHq7VjYdYWo6XltAfh6dpCtsm+wGVxgq1t9kmn7cSsEm1KFOv3mzoM+tmG5szQDtoq1nX/Fcvn4xqKt7p6mxmbGsXnGw9olLQBSFs6X+RstEvF3GC2terUXb6MAS6blIodoPGlyEaWFr0AHBrbPxfZDvqkMjUlbep9zvTJsRcAmce2shJpTWaZGqKbnZ4Y8hE53ct/n7pYwyRzSJxtMScb+W4zTLH3fS1JXBcCBzUZ7AIgjb6VUJin4MnI838MGIXlsod1VNL/Sp8WjY2H1gXAPW4S/P++2mZtbgxy2UGAfYIzVZU+7pql632vRV/d9oitlABwgYp8GcsmkwHfhOo8IB+yqp640UQpABX49C0vW3gN6x8c2rE6Ne/UG6gsiD4AKgULxkxqWziofzEZW2ZmXwPv6nOjYwHQR//Q504CGPoRdxiYvIHJGxjnCfwDHkX3MVHc7z4AAAAASUVORK5CYII="
+      height="20"
+      width="20"
+    />
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA2FJREFUaEPtmVmojVEUx3+XB7NSMiZC5iIPJEoyy0wiMoQopUhRHoiIB/HgQaGkKPMQD0pIJKRIZMyT2YuMIex/7VPn3L7zfXvvbx86dXbdbrdvrf9a/732XsO+dVT5qqty/6kR+N8RrEWgFoGcO1A7Qp4b2BFYA/QFegOtgQfAVeAQcMcTLzWN9gQe+wKmyI82Th8BWqXInAaWAe+KZPT3eGBqkl7aEToKNAUmRiCxwuz2bkecl8ApYKD53R9oBoj8RR8CLYGPVuFMOfaODsmJu46ySWKrgF32gzb0a7FQuQgMMmG7WSR4EpgR6MRDe9591eXoVuAtMAL4A8yrD1KOgJw9Xk/4FjDf817o3Oo45F33gcHAN1cCw4ErCVZ/AJuA7cAvB6+2GaNrHeTSRJSlFIH3PnegmwnXsxTUe8ACQL/TljZBmxG6bgBjgU/lANKykJj3ybCs/H0COAx8SJBV6PuFeg+MAy6k6acRmACc9zB+zRYlRU6OPwX22BToAVMiOhK4FEpAeseAmaHWI+gpG94OITAU6AqcA/YB0yM4EwLRwVTm1yEEVAULfckTc8Z7hFjPqfMZaJGFUe4ONAK+ZylX+Pt10z4My7KRdolVgBIbqCzQSN9Va9ZlYaURUDeqVNowC6RC31W8koppibmsgWaDkd5YIQfTYFV127jYzSIgjKU2nzdwAYwks8MOPplwLgQEony80hSnuZmIcQSUwl+4QLkQUCYYZcE0Bs5yAc4ho6lttqu+C4EuwHPThf6LI/TbzsuPYhIQlpq1Oa6gOeR2Aqt99F0iIDxlBE1oikallh4QBvgWUFcCclrOKy93rgADtQ1qX9TBei0fAgXgRcBCoJNJr+3MdNbEy2Ky8BRD4GwITgiBgp32JioHgDEhhq3OTzPVTfOcO0rMhRDQk8tiOxs3z+H8F9PxTjIj5+UcGF7/4NB4p+ZOs3DjPEYBteiaMdRr5VpJEdAr2GRALxBtAR2VIZHOupzVW8/6XF4XKZc7QnJ6sz0qMWzpPWc/sAV4EwOwgJF1B/R6vMQYXR6YPjXcHwT2Fj1VxvTf6w4obfayTy0aMbsDmhlUF/Qg+8rmcY2i+tEwXvKOGdVzC5YVgUrYjIpZIxB1OwPAahEI2LSoKrUIRN3OALCqj8Bfn7V4MWWx7lcAAAAASUVORK5CYII="
+      height="20"
+      width="20"
+    />
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABYdJREFUaEPtmWWodUUUhp/vn93diR3Yhd2d2GBiYRfYjd3dYIOK2IqJKKiIjV0odoL1S50H9r7MnTt79t7nXJAL3wsX7jkzs2bWrFlrvWudSUxwTJrg52eyAv+3BcfTAvMBGwPrVn9zJ8p9CTwVxp4DngS+HQ/lh1VgIeAoYFNg4Z4Heg94FDgf+L7n2pHpgyowVZBwGnDsoBtH6/4EzgTOHUTWIApsC1wNzDnIhoU1HwL7AS/0kdtHAW/9ZmDnPhsMMPcK4LCu67oqMBvwBLB8V8FDztPJtfRfbXK6KDAl8DKwTJuwcR6/D9gJ+Lckt4sC9wI79Dzc88B3wA/Ar8Aclc+sDszYQ5aB4vRhFDgSuLjjhrcA91RPrbRkPWBPYO+OcjcAnmmaW7LAPIDJpw2+1yOCcxvX+0D5p1aRp7TuM8B8k0VJgduB3VtOdEoVw/scPJ27WUiCtwEzF4SYLC/JjTcpsChgXC5hV+DuZMLUwI7AFsBSwPxVJPkgXMZHwNOAF5NiNeDZkMymaNjwG2CuPgpcCxxQOH3u5g8BzgBmalH8zSpEfp7M2ysorB81QZ+5NR3MWcCwKTeZpkHS68AKyZiRQqW64mdgJcD3HeMVYOUGIWbotbsosCXwUOEkm1Rssp6yD3BT15NH894Glk3WGXFkrE2YBfgpHsxZ4ELg6AYJXwQzLhCNzRrCod9ptRpnhfd6PSBJ00+kBk2QMqTjHrDpGW4X2MADbQrI19dp2FES51uvIYM8Pvp8I7B/svaOEBB2a5D3ErBmMqY1tWoOXs7JbQpYaMzeIMAEFEcR33BtEW/cqPNjslaFryxYQev9HY2bU7Ihs0qUu7Qp8E9I303hdXPgsUrADMAvkbCHga0yBz0wXMg1BQWWDpzn3Whc2iJ9yeHVUASt0qZAiTytBbxYCUgz9eVBocMzu15UVW1NOqwKGH1qeAkPNkz+GhhVquZu+o9Q5sn9c9goihKa3mdT44Lw+bjMIuN+Gm3iaYslSdN4b92RgxYf5eA5BUwwvuUcvGFvusY7Vcb1s76hj8Sw0DdKlZCe4QTg7IYFY3hRToHXMomqlnd/Qq2NCidWg1+FfDBvsrEKX1o4vXuZ0GI8DphrchgTtXIK3FnF75wAKyTfYO28+oEcRw7zOzBtskiHt2PRBEOwXYkY7tHEiXxa+8aTcwocDFxV2FSnPCYaN0QaKr05mWXXw1joSBrjsGuIvKuw90GhOJKnjSCnwHKBbL1REOKQZtf8wvAp+8wRvFJEM+GZ+GKUkqjzlgDeb1PA8U+BBQtKSG/twunEderfsKLL8TIbAc5LYXbeI/lym5QmJOMeXAVGoSlh+Ta7NJq0woqVRN+/fhDDZOdzrKmEUeS8UB9fl8zTryR3pXrZ8nZMQGhSQJLWp92XpbrRIW2CSc91+BSOub7UmtRfjHDpBRXb6xbzat0FtgbjemDrkBM+SShCTo60wEZAzHBz86ydLZbGoFQTW6PqC9N10MDoYxSqYaSQSstedVSVieGB5Ugxk23aJpdfRua29YXk65d1UCB9/x447iTIdax5rWsXCa0X+0NdERPIXhaoJ5cSm3PSErMLfeh6+HOiTJ9d02YBF5kVZaBpHVwLNPHEBYsd5hu6nrAwL6UtAyvgQv3AHyPS6skxqUD8lq1prW2Hgf60/Xg1d+ODWI+acGIYHYwSwlD48TAnr2J91+g30K+UUmZDrB0CIfU9qfq/rZ9U0s3WpM9PxtkZXXwgJ2z6qvo6FNDJpc1Ldoj7OVm/VR3opjq4qMygCsRC16huzX6+77Yr3gpNrEcqa6aNgK4yBnpCTcKtDSRu64ee6eKBA0lH/GWn5vb2R2Wb/tkj9beDoTEeFhj6EMMImKzAMLc3HmsnvAX+A67V8jFLUR7HAAAAAElFTkSuQmCC"
+      height="20"
+      width="20"
+    />
+  </div>
+</section>
+  <div class="align-center justify-center flex flex-col md:flex-row gap-7 items-center m-7">
+    <p>Enter your email adress</p>
+    <div >
+    <label for="email"></label>
+    <input class="align-center items-center border-2 border-black transition-all hover:bg-white bg-black duration-[300ms]" type="email" placeholder="email.."></div> </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
